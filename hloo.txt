@@ -1,0 +1,52 @@
+// script.js
+
+const errornumber = document.querySelector(".error_number");
+errornumber.style.display = "none";
+
+const errormonth = document.querySelector(".error_month");
+errormonth.style.display = "none";
+
+const errorcvv = document.querySelector(".error_cvv");
+errorcvv.style.display = "none";
+
+// right side inputs
+const main_name = document.querySelector(".main_name");
+const main_number = document.querySelector(".main_number");
+const main_month = document.querySelector(".main_month");
+const main_year = document.querySelector(".main_year");
+const input_cvc = document.querySelector(".input_cvc");
+
+// cards input
+const card_number = document.querySelector(".card_number");
+const card_name = document.querySelector(".card_name");
+const card_month = document.querySelector(".card_month");
+const card_year = document.querySelector(".card_year");
+const card_cvv = document.querySelector(".card_cvc");
+
+// function
+function updateCardName() {
+    card_name.textContent = main_name.value;
+}
+
+function updateCardNumber() {
+    card_number.textContent = main_number.value;
+}
+
+function updateCardMonth() {
+    card_month.textContent = main_month.value;
+}
+
+function updateCardYear() {
+    card_year.textContent = main_year.value;
+}
+
+function updateCardCvv() {
+    card_cvv.textContent = input_cvc.value;
+}
+
+// update
+main_name.addEventListener("input", updateCardName);
+main_number.addEventListener("input", updateCardNumber);
+main_month.addEventListener("input", updateCardMonth);
+main_year.addEventListener("input", updateCardYear);
+input_cvc.addEventListener("input", updateCardCvv);

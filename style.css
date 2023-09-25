@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    padding-right: relative;
+}
+.box{
+    margin-left: 7vw;
+}
+
+/* .card1{
+    position: absolute;
+    background-image: url(./images/bg-card-front.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 29vw;
+    border-radius: 9px;
+    padding: 2vw;
+    color: white;
+    top: 12vw;
+    left: 20vw;
+
+    height: 16vw;
+}
+.card2{
+    position: absolute;
+    background-image: url(./images/bg-card-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 29vw;
+    border-radius: 9px;
+    padding: 2vw;
+    color: white;
+    top: 33vw;
+    left: 20vw;
+    height: 18vw;
+} */
+.card1,.card2 {
+    position: absolute;
+    border-radius: 9px;
+    padding: 2vw;
+    color: white;
+    left: 20vw;
+    width: 29vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card1 {
+    background-image: url(./images/bg-card-front.png);
+    top: 12vw;
+    height: 16vw;
+}
+
+.card2 {
+    background-image: url(./images/bg-card-back.png);
+    top: 33vw;
+    height: 18vw;
+}
+.card_cvv{
+    margin-top: 5.8vw;
+    margin-left: 21vw;
+    font-size: 1.8vw;
+}
+.card1 img{
+    width: 20%;   
+}
+.card_number{
+    width: 90%;
+    font-size: 2vw;
+    margin: 0 auto;
+    display: flex;
+    font-weight: 500;
+    justify-content: space-between;
+    margin-top: 3.4vw;
+    margin-bottom: 1vw;
+}
+.card_number p{
+    margin: 0 4px;
+}
+.card_detail{
+    display: flex;
+    justify-content: space-between;
+}
+.card_date{
+    display: flex;
+    font-size: 1.8vw;
+}
+.card_name{
+    font-size: 1.8vw;
+}
+.container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    
+}
+.right{
+    width: 70vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 0.9vw;
+    letter-spacing: 0.1vw;
+    flex-wrap: nowrap;
+}
+.hloo p{
+    margin-bottom: 1vw;
+    margin-top: 1.8vw;
+    font-weight: 800;
+    font-size: 1vw;
+}
+.hlo{
+    margin-bottom: 1.1vw;
+    margin-top: 1.8vw;
+    font-weight: 800;
+    font-size: 1vw;
+}
+
+input{
+    width: 100%;
+    padding: 0.9vw;
+    margin-bottom: 1.1vw;
+    border-radius: 7px;
+    font-size: 1.3vw;
+    font-weight: 600;
+}
+.main_month,.main_year,.input_cvc,.main_name,.main_number{
+    border-color: hsl(278, 68%, 11%);
+    
+}
+ 
+.box{
+    width: 30vw
+}
+input::placeholder{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 1.3vw;
+    color:  hsl(270, 3%, 87%);
+}
+.main_month{
+    width: 6vw;
+}
+.main_year{
+
+    width: 6vw;
+    margin-left: 1.2vw;
+}
+.input_cvc{
+    width: 11vw;
+    margin-left: 6vw;
+}
+.CVC{
+    margin-left:9.5vw;
+}
+
+.main_Month{
+    display: flex;
+    flex-direction: column;
+}
+.input_mmyy{
+    display: flex;
+    
+}
+.main_monthnum{
+    display: flex
+}
+.error{
+    display: flex;
+    justify-content: space-between;
+    color: hsl(0, 100%, 66%);
+}
+.error_number{
+    color: hsl(0, 100%, 66%);
+}
+.btn{
+    width: 30.4vw;
+    color: white;
+    background-color: hsl(278, 68%, 11%);
+    font-size: 1.5vw;
+    padding: 0.8vw;
+    margin-top: 2vw;
+    
+}
+button{
+    border-radius: 7px;
+}
+.left{
+    width: 35%;
+    min-height: 100%;
+   
+}
+.left img{
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.thank{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30vw;
+    
+    left: 55vw;
+
+}
+.thank img{
+    width: 5vw;
+}
+.thankyou{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 3vw;
+    letter-spacing: 0.3vw;
+    font-weight: 300;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+    
+}
+.weadd{
+    font-weight: 1000;
+    font-size: 1.7vw;
+    color: hsl(279, 6%, 55%);
+}
+
+.thank p{
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    background-color: hsl(278, 68%, 11%);
+    min-width: 100%;
+    text-align: center;
+    color: white;
+    padding: 0.9vw;
+    border-radius: 9px;
+    margin-top: 1vw;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.5vw;
+    display: flex;
+}
+ @media (max-width:1180px) {
+    .card2{
+        top: 53vh;
+        width: 30vw;
+        height: 30vh;
+    }
+    .card_cvv{
+        margin-top: 4vw;
+        width: 30vw;
+        height: 25vh;
+    }
+    
+    
+}
+@media (max-width:1090px) {
+    .card2{
+        top: 50vh;
+        width: 30vw;
+        height: 25vh;
+    }
+    
+}
+@media (max-width:1153px) {
+    .card2{
+        top: 50vh;
+        width: 30vw;
+        height: 29vh;
+    }
+    .card_cvv{
+        margin-top: 9vh;
+    }
+    
+}
+
+@media (max-width:1142px) {
+    .card_cvv{
+        margin-top: 8.9vh;
+        
+    }
+    
+}
+@media (max-width:1052px) {
+    .card_cvv{
+        margin-top: 9.2vh;
+        
+    }
+    
+}
+@media (max-width:1014px) {
+    .card2{
+        top: 47vh;
+        width: 30vw;
+        height: 28vh;
+    }
+    
+}
+
+@media (max-width:978px) and (min-width:866px) {
+    .card1{
+        width: 31vw;
+        margin-top: 4vh;
+        left: 16vw;
+        height: 18vw;
+    }
+    .card2{
+        left: 16vw;
+        width: 31vw;
+        height: 19vw;
+        margin-top: 5vh;
+    }
+    .hloo p,.hlo{
+        font-size: 1.4vw;
+    }
+    .box{
+        width: 55%;
+        margin-left: 16vw;
+    }
+    .btn{
+        width: 100%;
+    }
+    
+}
+@media (max-width:904px) and (min-width:865px){
+    .card_cvv{
+        margin-left: 23vw !important;
+    }
+    .card1{
+        left: 16vw;
+        height: 18vw;
+    }
+}
+@media (max-width:978px) {
+    .card_cvv{
+        margin-left: 32vh;
+    }
+    
+    
+}
+@media (max-width:920px){
+
+    .card_cvv{
+        margin-top: 8.1vh;
+    }
+    
+}
+@media (max-width:865px) {
+    .box{
+        width: 57%;
+        margin-left: 15vw;
+    }
+    .card1{
+        width:33vw ;
+        left: 15vw;
+        height: 19vw;
+    }
+    .card2{
+        left: 16vw;
+        width: 31vw;
+        height: 19vw;
+    }
+    .card_cvv{
+        margin-left: 23vw;
+    }
+    .hloo p{
+    margin-bottom: 1vw;
+    margin-top: 1.8vw;
+    font-weight: 800;
+    font-size: 1.4vw;
+}
+
+.hlo{
+    margin-bottom: 1vw;
+    margin-top: 1.8vw;
+    font-weight: 800;
+    font-size: 1.4vw;
+}
+.btn{
+    width: 100%;
+    padding: 4%;
+    font-size: 1.9vw;
+    
+}
+.main_month{
+    width: 8vw;
+}
+.main_year{
+
+    width: 8vw;
+    margin-left: 1.2vw;
+}
+.input_cvc{
+    width: 13vw;
+    margin-left: 8vw;
+}
+.CVC{
+    margin-left:12vw;
+}
+}
+@media (max-width:856px){
+    .card2{
+        width: 33vw;
+        margin-left: -1vw;
+    }
+    
+}
+@media (max-width:815px){
+    .card_cvv{
+        margin-top: 7.2vh;
+    }
+    
+} 
+@media (max-width:787px) {
+    .container{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        width: 100%;
+        margin-left: 0;
+    }
+    .left{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .card1{
+        min-width: 50vw;
+        top: 43.7vw;
+        left: 18vw;
+        z-index: 1;
+        min-height: 28vw;
+    }
+    .card2{
+        min-width: 50vw;
+        top: 28vw;
+        left: 34vw;
+        min-height: 28vw;
+       
+    }
+    .card_cvv{
+     margin-top: 10vw;
+     margin-left: 35vw;
+     font-size: 3vw;
+    }
+    .card_number{
+        font-size: 3vw;
+        margin-top: 8vw;
+        margin-left: 6vw;
+        
+    }
+
+    .right{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        width: 90%;
+        margin-left: 34;
+    }
+    .main_month{
+        width: 100%;
+    }
+    .hloo p{
+        font-size: 2.5vw;
+    }
+    .hlo{
+        font-size: 2.5vw;
+    }
+    .btn{
+        width: 100%;
+        font-size: 2.9vw;
+        padding: 1.8vw;
+        margin-top: 2vw;
+        font-family: 'Space Grotesk', sans-serif;
+    }
+    
+    input::placeholder{
+        font-size: 3vw;
+    }
+    .card_name,.card_date{
+        margin-top: 2vw;
+        font-size: 2.7vw;
+    }
+    input{
+        width: 100%;
+        padding: 1.5%;
+        margin-bottom: 1.1vw;
+        border-radius: 7px;
+        font-size: 2vw;
+    }
+    .main_month,.main_year{
+        width: 20%;
+    }
+    .input_cvc{
+        width: 20%;
+        margin-left: 40%;
+    }
+    .CVC{
+        margin-left: 56%;
+    }
+    .box{
+       padding: 0;
+       margin: 0 auto;
+       
+    }
+    .right{
+        padding-top: 23vw;
+        display: block;
+        height: 20vw;
+        
+    }
+    
+    .error,.error_number{
+        font-size: 2vw;
+        margin-bottom: 1vw;
+        color: hsl(0, 100%, 66%);
+    }
+    .thank{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    left: 25vw;
+    top: 100vw;
+}
+    .thankyou{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 5vw;
+    letter-spacing: 0.3vw;
+    font-weight: 300;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+    
+}
+.weadd{
+    font-weight: 1000;
+    font-size: 3vw;
+    color: hsl(279, 6%, 55%);
+}
+
+a{
+    text-decoration: none;
+    background-color: hsl(278, 68%, 11%);
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 1.7vw;
+    border-radius: 9px;
+    margin-top: 1vw;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2.7vw;
+}
+
+}

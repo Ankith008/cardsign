@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+
+<body>
+  <div class="card1">
+    <img src="./images/card-logo.svg">
+    <div class="card_number">
+      0000 0000 0000 0000
+    </div>
+    <div class="card_detail">
+      <div class="card_name">XXXXXXXXXXXXXX</div>
+      <div class="card_date">
+        <div class="card_month">00</div>/<div class="card_year">00</div>
+      </div>
+    </div>
+  </div>
+  <div class="card2">
+    <div class="card_cvv">000</div>
+  </div>
+  <div class="container">
+    <div class="left">
+      <picture>
+        <source media="(min-width:787px)" srcset="./images/bg-main-desktop.png">
+        <img src="./images/bg-main-mobile.png">
+      </picture>
+    </div>
+    <div class="right">
+      <div class="box">
+        <div class="name hloo">
+          <p>CARDHOLDER NAME</p><input type="text" class="main_name" placeholder="e.g. Jane Appleseed">
+        </div>
+        <div class="number hloo">
+          <p>CARD NUMBER</p><input type="text" class="main_number" placeholder="e.g. 1234 5678 9123 0000">
+          <div class="error_number">only number format</div>
+        </div>
+        <div class="main_Month">
+          <div class="main_monthnum">
+            <p class="main_exp hlo">EXP. DATE (MM/YY)</p>
+
+            <p class="CVC hlo">CVC</p>
+
+          </div>
+          <div class="input_mmyy">
+            <input type="text" class="main_month" placeholder="MM">
+            <input type="text" class="main_year" placeholder="YY">
+            <input type="text" class="input_cvc" placeholder="e.g.123">
+          </div>
+          <div class="error">
+            <div class="error_month">can't be blank</div>
+            <div class="error_cvv">can't be blank</div>
+          </div>
+        </div>
+        <button class="btn">
+          <p>Confirm</p>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="thank">
+    <img src="./images/icon-complete.svg" alt="">
+    <div class="thankyou">THANK YOU!</div>
+    <div class="weadd">We've added your card details</div>
+    <a href="./index.html">
+      <p>Continue</p>
+    </a>
+  </div>
+  </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
