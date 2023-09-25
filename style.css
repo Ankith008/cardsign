@@ -576,3 +576,43 @@ a{
 }
 
 }
+@media (max-width:480px) {
+    .main_name,.main_number,.main_month,.btn{
+        padding: 2vh;
+        
+    }
+    .btn{
+        margin-bottom: 2vh;
+    }
+    .card1{
+        width: 75vw;
+        left: 5vw;
+        height: 40vw;
+    }
+    .card2{
+        width: 75vw;
+        height: 40vw;
+        left: 23vw;
+        top: 19vw;
+    }
+    .name{
+        margin-top: 8vh;
+    }
+    .right{
+        min-height:0%;
+    }
+    .card_name,.card_cvv,.card_detail,.card_number,.card_month,.card_year{
+        font-size: 4vw;
+    }
+    .card_number{
+        margin-left: 8vw;
+        font-size: 5vw;
+        margin-top: 10vw;
+    }
+    .card_cvv{
+        margin-top: 15vw;
+        font-size: 5vw;
+        margin-left: 53vw;
+    }
+
+}
