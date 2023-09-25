@@ -20,7 +20,7 @@ body{
 
 /* .card1{
     position: absolute;
-    background-image: url(./images/bg-card-front.png);
+    background-image: url(bg-card-front.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 29vw;
@@ -34,7 +34,7 @@ body{
 }
 .card2{
     position: absolute;
-    background-image: url(./images/bg-card-back.png);
+    background-image: url(bg-card-back.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -58,13 +58,13 @@ body{
 }
 
 .card1 {
-    background-image: url(./images/bg-card-front.png);
+    background-image: url(bg-card-front.png);
     top: 12vw;
     height: 16vw;
 }
 
 .card2 {
-    background-image: url(./images/bg-card-back.png);
+    background-image: url(bg-card-back.png);
     top: 33vw;
     height: 18vw;
 }
