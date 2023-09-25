@@ -615,5 +615,17 @@ a{
         margin-left: 53vw;
         padding:0;
     }
+    .name{
+       margin-bottom: 4vh;
+    }
+    .number{
+        margin: 2vh auto;
+    }
+    .main_Month{
+        margin: 2vh auto;
+    }
+    input::placeholder,input{
+        font-size: 4vw;
+    }
 
 }
